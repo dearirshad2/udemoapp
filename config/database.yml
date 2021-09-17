@@ -9,17 +9,10 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
-#development:
-#  <<: *default
-#  database: db/development.sqlite3
-  
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: udemo
-  pool: 5
-  username: dbuser  
-  password: qqq123 
+ <<: *default
+ database: db/development.sqlite3
+  
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -32,10 +25,10 @@ test:
 #  <<: *default
 #  database: db/production.sqlite3
   
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: udemo2
-  pool: 5
-  username: dbuser  
-  password: qqq123 
+#production:
+#  adapter: postgresql
+#  encoding: unicode
+#  database: db
+#  pool: 5
+#  username: user  
+#  password: password 
