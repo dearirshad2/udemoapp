@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @userdat.fullname %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @userdat.dob %>
+</p>
+
+<p>
+  <strong>Vaccination:</strong>
+  <%= @userdat.vaccination %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @userdat.gender %>
+</p>
+
+<p>
+  <strong>Bloodgroup:</strong>
+  <%= @userdat.bloodgroup %>
+</p>
+
+<%= link_to 'Edit', edit_userdat_path(@userdat) %> |
+<%= link_to 'Back', userdats_path %>

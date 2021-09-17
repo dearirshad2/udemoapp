@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @userdatum.fullname %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @userdatum.dob %>
+</p>
+
+<p>
+  <strong>Vaccination:</strong>
+  <%= @userdatum.vaccination %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @userdatum.gender %>
+</p>
+
+<p>
+  <strong>Bloodgroup:</strong>
+  <%= @userdatum.bloodgroup %>
+</p>
+
+<%= link_to 'Edit', edit_userdatum_path(@userdatum) %> |
+<%= link_to 'Back', userdata_path %>

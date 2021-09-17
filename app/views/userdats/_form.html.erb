@@ -1,0 +1,42 @@
+<%= form_with(model: userdat) do |form| %>
+  <% if userdat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(userdat.errors.count, "error") %> prohibited this userdat from being saved:</h2>
+
+      <ul>
+        <% userdat.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fullname %>
+    <%= form.text_field :fullname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dob %>
+    <%= form.text_field :dob %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vaccination %>
+    <%= form.text_field :vaccination %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_area :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bloodgroup %>
+    <%= form.text_area :bloodgroup %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

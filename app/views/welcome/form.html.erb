@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Udemo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+   	<%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "app" %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    
+
+  </head>
+
+  <body>
+  
+  <h2 class='header'>
+  		CSV to Table Insert
+  </h2>
+  
+  <div class="form-style">
+	<form>
+		<fieldset>
+		<legend><span class="number">1</span> Upload the CSV</legend>
+		<div id='wrapper'>
+			<span class='ftext'>Select File...</span>
+			<input type='file' id='browse'>
+		</div>
+		</fieldset>
+		<input type="button" value="Upload" id='upload' />
+	</form>
+	
+	<center>
+		<div id='message'>
+			
+		</div>
+	</center>
+  </div>
+  
+  		
+  <div class='overlay'></div>
+  
+  </body>
+
+</html>

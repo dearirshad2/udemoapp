@@ -1,0 +1,2 @@
+class Userdat < ApplicationRecord
+end
